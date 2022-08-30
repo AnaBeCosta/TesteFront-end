@@ -1,7 +1,11 @@
 # TesteFront-end
 
-| Link do Figma : | https://www.figma.com/file/cNPjV5pxb9xYmvqPdomSZP/TesteFront-end?node-id=0%3A1
-| ------ | ------ |
+| Link do Figma : | https://www.figma.com/file/cNPjV5pxb9xYmvqPdomSZP/TesteFront-end?node-id=0%3A1 |
+|--- |--- |
+| Link do Site  : | https://teste-thompson.vercel.app/Thompson.html |
+
+-   Para realizar o scroll horizontal na página, utilizar a seta do teclado.
+
 
 
 

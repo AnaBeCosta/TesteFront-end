@@ -1,0 +1,219 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Baloo Da 2';
+    src: url('Baloo/BalooDa2-Regular.ttf') format('truetype');
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#ladoesquerdo{
+    background-color: #302F2F;
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-family: 'Baloo Da 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+figcaption{
+    margin-top: 45px;
+}
+
+figure{
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#ladodireito{
+    background-color: #AEDBCB;
+    background-size: cover;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+
+form{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom:8 0;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.botao{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 15px;
+    background-color: #358B27;
+    color: white;
+    width: 140px;
+    height: 30px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.card{
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 3px 6px 3px rgba(100, 100, 100, 0.3);
+    width: 400px;
+    padding: 30px;
+    padding-bottom: 7px;
+    border-radius: 20px;
+}
+
+form{
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.form-group{
+    margin-top: 5px;
+}
+
+.btn{
+  scroll-snap-align: start;
+  width: 100px;
+  height: 47px;
+  flex-shrink: 0;
+  background: #EAEBE6;
+  border-radius: 20px;
+  display: inline;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  border: none;
+  margin: 5px;
+}
+
+.btn-group-horizonal{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    float: none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.alert{
+    font-size: 13px;
+    width: 240px;
+    height: 25px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn-group-horizonal::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    #ladoesquerdo{
+        float: none;
+        width: 100%;
+        height: 303px;
+    }
+    
+    #ladodireito{
+        width: 100%;
+        height: 100%;
+    }
+    
+    figure{
+        font-size: 16px;
+        text-align: center;
+        width: 300px;
+        height: 200px;
+        margin-top: 0;
+    }
+
+    figcaption{
+        font-size: 13px;
+        width: 300px;
+        height: 40px;
+        line-height: 22px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+    
+    img{
+        width: 130px;
+        height: 138px;
+        margin-top: 30px;
+    }
+
+    .botao{
+        margin-top: 3px;
+        font-size: 12px;
+    }
+    .card{
+        top:-60px;
+        width: 283px;
+        padding: 20px;
+        padding-bottom: 8px;
+    }
+
+    form{
+        font-size: 12px;
+    }
+
+    .btn{
+        width: 85px;
+        font-size: 10px;
+    }
+    .alert{
+        width: 195px;
+        font-size: 10px;
+        height: 22px;
+        right:5%;
+        left: 5%;
+        margin: 0;
+    }
+
+}
+
+

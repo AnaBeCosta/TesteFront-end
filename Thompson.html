@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <title>Teste-Thompson</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+     <div id="ladoesquerdo">
+        <figure>
+            <img src="img/thompson.png" alt="logo">
+            <figcaption>
+                Preencha o formulário ao lado e solicite créditos de SMS para envio de notificações a seus clientes 
+            </figcaption>
+        </figure>
+    </div>
+    <div id="ladodireito">
+        <div class="card" style="float: center;">
+                <form id="form-venda" name="formVenda">
+                    <div class="btn-group-horizonal" role="group" aria-label="Horizontal radio toggle button group" data-bs-ride="carousel">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" onclick="preco20()">
+                        <label class="btn btn-outline-info" for="vbtn-radio1">Créditos de 200 SMS</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off" onclick="preco25()">
+                        <label class="btn btn-outline-info" for="vbtn-radio2">Créditos de 250 SMS</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off" onclick="preco30()">
+                        <label class="btn btn-outline-info" for="vbtn-radio3">Créditos de 300 SMS</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off" onclick="preco35()">
+                        <label class="btn btn-outline-info" for="vbtn-radio4">Créditos de 350 SMS</label>
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off" onclick="preco40()">
+                        <label class="btn btn-outline-info" for="vbtn-radio5">Créditos de 400 SMS</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cnpj">CPNJ: </label>
+                        <input class="form-control form-control-sm" type="text" name="cnpj" id="cnpj" placeholder="Informe o CPNJ">
+                    </div>
+                    <div class="form-group">
+                        <label for="contato">Contato: </label>
+                        <input class="form-control form-control-sm" type="text" name="contato" id="contato" placeholder="Informe o contato">
+                    </div>
+                        <div class="form-group">
+                            <label for="usuario">Usuário SSPLUS: </label>
+                            <input class="form-control form-control-sm" type="text" name="usuario" id="usuario" placeholder="Informe usuário SSPLUS ">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input class="form-control form-control-sm" type="email" name="email" id="email" placeholder="Informe o email">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone: </label>
+                            <input class="form-control form-control-sm" type="text" name="telefone" id="telefone" placeholder="Informe o telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="razaoSocial">Razão Social: </label>
+                            <input class="form-control form-control-sm" type="text" name="razaoSocial" id="razaoSocial" placeholder="Informe a razão social">
+                        </div>
+                        <div class="form-group" id="box-valor">
+                            <label for="valor">Valor: </label>
+                            <input class="form-control form-control-sm" type="hidden" name="valor" id="valor" value=""  disabled="disabled">
+                        </div>
+                        <div class="form-group  text-center">
+                            <button type="submit" class="botao" onclick="envioAlert()">Comprar SMS</button>
+                        </div>
+                        <div class="alert alert-danger d-none">
+                            <span id="campo-erro"></span>!
+                        </div>
+                </form>
+         </div>
+     </div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="config.js"></script>
+</body>
+</html>

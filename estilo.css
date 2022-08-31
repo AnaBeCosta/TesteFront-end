@@ -202,8 +202,9 @@ form{
     }
 
     .btn{
-        width: 85px;
-        font-size: 10px;
+        width: 75px;
+        font-size: 8px;
+        line-height: 13px;
     }
     .alert{
         width: 195px;
